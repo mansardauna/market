@@ -24,6 +24,7 @@ function Navbar() {
           <div className="lname">Digital Market</div>
         </div>
         <div className="none d-flex col-6 justify-content-between  fw-light pointer pe-auto align-items-center">
+
           <Menu /> {/* Render the menu */}
           <input type="text" placeholder='Search here.......' className='col-6' />
         </div>

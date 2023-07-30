@@ -105,6 +105,8 @@ input:focus{
     display: block;
 
 }
+
+
 }
 
 /* hamburgerMenu.css */
@@ -144,6 +146,10 @@ color: #fff;
     display: none;
 
   }
+  .menu-ul{
+    display: block;
+    }
+  
 }
 .menu-ul{
   display:  flex;
@@ -171,4 +177,7 @@ a{
 .login-btn:hover{
   background-color: #a09e9e3d;
   cursor: pointer;
+}
+.cartImage{
+  width: 30rem;
 }
