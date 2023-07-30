@@ -17,7 +17,6 @@ const Catergory = () => {
 
   return (
     <>
-      <Navbar />
       <div className='container-fluid  mx-2'>
         <div className="row mt-2 mx-2">
           <div className="col-sm-2">
@@ -35,7 +34,7 @@ const Catergory = () => {
               onClick={() => filterResult('black')}>              Black
             </button>
             <button className="btn w-100 mb-2"
-              onClick={() => filterResult('White')}>              White
+              onClick={() => filterResult('white')}>              White
             </button>
             <button className="btn w-100 mb-4"
               onClick={() => setData(catergories)}>              All
@@ -43,7 +42,7 @@ const Catergory = () => {
 
 
           </div>
-          <div className="col-sm-9">
+          <div className="col-sm-10">
             <div className="row">
               {data.map((values) => {
                 const { id, title, price, image } = values

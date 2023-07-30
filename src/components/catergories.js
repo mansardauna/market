@@ -51,6 +51,20 @@ const catergories = [
     image: './women.jpeg'
   },
   {
+    id: 2,
+    title: 'cap',
+    Catergory: 'black',
+    price: 134,
+    image: './shoe2.jpeg'
+  },
+  {
+    id: 6,
+    title: 'shirt',
+    Catergory: 'white',
+    price: 112,
+    image: './shoew.jpeg'
+  },
+  {
     id: 7,
     title: 'cap',
     Catergory: 'men',
@@ -99,6 +113,21 @@ const catergories = [
     price: 134,
     image: './women2.jpeg'
   },
+
+  {
+    id: 2,
+    title: 'cap',
+    Catergory: 'white',
+    price: 134,
+    image: './shoew2.jpeg'
+  },
+  {
+    id: 6,
+    title: 'shirt',
+    Catergory: 'black',
+    price: 112,
+    image: './shoe2.jpeg'
+  },
   {
     id: 14,
     title: 'shirt',
@@ -116,9 +145,23 @@ const catergories = [
   {
     id: 16,
     title: 'shirt',
-    Catergory: 'men',
+    Catergory: 'black',
     price: 112,
-    image: './men2.jpeg'
+    image: './shoe3.jpeg'
+  },
+  {
+    id: 2,
+    title: 'cap',
+    Catergory: 'white',
+    price: 134,
+    image: './shoew3.jpeg'
+  },
+  {
+    id: 6,
+    title: 'shirt',
+    Catergory: 'women',
+    price: 112,
+    image: './women.jpeg'
   },
   {
     id: 17,

@@ -1,12 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
 
-function cart() {
+function Cart() {
   return (
     <div>
-      <Navbar />
       cart</div>
   )
 }
 
-export default cart
+export default Cart
