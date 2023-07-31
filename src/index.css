@@ -3,13 +3,8 @@
 @tailwind utilities;
 
 
-@media screen and (max-width: 580px) {
-.grid-card{
-  grid-template-columns: auto;
-  margin-left: 2rem;
 
-}  
-}
+
 body {
   margin: 0;
   font-family: '',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,18 +21,16 @@ code {
 body{
   overflow-x: hidden;
 }
-.grid{
-  
-}
 
-.grid-card{
+
+/* .grid-card{
   display: grid;
   grid-template-columns: auto auto auto;
   row-gap: 2px;
   column-gap: 4px;
   padding: 1rem;
-}
-.grid .flex{
+} */
+.side .flex{
   padding: .7rem;
   padding-left: 1.5rem;
   color: rgba(26, 25, 25, 0.798);

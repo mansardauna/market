@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import catergories from './catergories';
 import Catergories from './catergories';
-import Navbar from './Navbar';
 import '../index.css'
 
 
@@ -20,41 +19,41 @@ const Catergory = () => {
     <>
       <div className=''>
         <div className="flex">
-          <div className=" w-1/4 sidebar grid hidden md:block h-fit">
+          <div className=" w-1/4 side hidden md:block h-fit">
             <div className="category m-auto w-fit  text-2xl uppercase text-amber-400 font-light">Products</div>
 
             <div className="flex" onClick={() => filterResult('men')}>
-              <img src='/icons/car.svg' className='w-5' />
+              <img src='/icons/car.svg' className='w-5' alt='car' />
               <div className="label ml-2">Automobile</div>
             </div>
 
             <div className="flex" onClick={() => filterResult('women')}>
-              <img src='/icons/phone.svg' className='w-5' />
+              <img src='/icons/phone.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Phones and Gadgets</div>
             </div>
 
             <div className="flex" onClick={() => filterResult('white')}>
-              <img src='/icons/books.svg' className='w-5' />
+              <img src='/icons/books.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Books</div>
             </div>
 
             <div className="flex" onClick={() => filterResult('child')}>
-              <img src='/icons/electronic.svg' className='w-5' />
+              <img src='/icons/electronic.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Electronics</div>
             </div>
 
             <div className="flex" onClick={() => filterResult('white')}>
-              <img src='/icons/food.svg' className='w-5' />
+              <img src='/icons/food.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Food Items</div>
             </div>
 
             <div className="flex" onClick={() => filterResult('white')}>
-              <img src='/icons/music.svg' className='w-5' />
+              <img src='/icons/music.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Music</div>
             </div>
 
             <div className="flex" onClick={() => setData(catergories)}>
-              <img src='/icons/all.svg' className='w-5' />
+              <img src='/icons/all.svg' className='w-5' alt='icon' />
               <div className="label ml-2">All</div>
             </div>
 
@@ -62,8 +61,8 @@ const Catergory = () => {
 
 
           </div>
-          <div className=" container bg-slate-100" >
-            <div className="grid-card">
+          <div className=" container " >
+            <div className="grid-card grid grid-cols-1 m-auto md:grid-cols-3 w-fit gap-10">
               {data.map((values) => {
                 const { id, title, price, image } = values
                 return (
@@ -77,8 +76,8 @@ const Catergory = () => {
                           <p className="card-text text-sm font-light
                            mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                           <div className='grid'>
-                            <a href="#" className="btn uppercase">Cart</a>
-                            <a href="#" className="btn uppercase blue">buy</a>
+                            <a href="./home" className="btn uppercase">Cart</a>
+                            <a href="./home" className="btn uppercase blue">buy</a>
                           </div>
                         </div>
                       </div>
