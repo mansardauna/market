@@ -68,7 +68,7 @@ border: 1px solid tomato;
   border-radius: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
 .grid-card{
   grid-template-columns: auto;
   margin-left: 2rem;
