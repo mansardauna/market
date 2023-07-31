@@ -11,12 +11,12 @@ const DropdownMenu = () => {
   };
 
   return (
-    <div>
+    <div className='mb-2'>
 
-      <select id="dropdown" value={selectedOption} onChange={handleOptionChange} className='drop'>
+      <select id="dropdown" value={selectedOption} onChange={handleOptionChange} className='drop bg-transparent text-white w-36 text-sm px-2 outline-none border-gray-300 border rounded-md cursor-pointer py-2'>
 
         {options.map((option) => (
-          <option key={option} value={option}>
+          <option key={option} value={option} className='bg-zinc-800 text-white'>
             {option}
           </option>
         ))}

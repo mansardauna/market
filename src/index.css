@@ -1,8 +1,10 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: '',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -16,168 +18,45 @@ code {
 body{
   overflow-x: hidden;
 }
-.login{
-  width: 12rem;
-  justify-content: space-between;
-  position: absolute;
-  right: 1rem;
+.grid{
+  margin-top: 0rem;
+}
+
+.grid-card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2px;
+  column-gap: 4px;
+  padding: 1rem;
+}
+.grid .flex{
+  padding: .7rem;
+  padding-left: 1.5rem;
+  color: rgba(26, 25, 25, 0.798);
+  cursor: pointer;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   
 }
-.nav{
-  position: fixed;
-  z-index: 100;
-  top: 0;
-
-}
-.container-fluid{
-  margin-top: 1rem;
-}
-.row-nav{
-  align-items: center;
-  height: fit-content;
-}
-.logo{
-  align-items: center;
-}
-.lgimg{
-  padding: .5rem;
-  background-color: #fff;
-  border-radius: 5px;
+.grid .flex:hover{
+  background-color: rgba(247, 247, 182, 0.609);
   color: black;
-  font-weight: 700;
 }
-.lname{
-  margin-left: 1rem;
-  font-size: larger;
-  font-weight: 600;
+.flex .label{
+  margin-left: 1.5rem;
 }
-input {
-  border: none;
-  border-radius: 5px;
-  height: 2rem;
-  margin-left: 3rem;
-}
-input:focus{
-  outline: none;
-}
-.drop{
-  width: 11rem;
-  padding: 0.5rem;
-  background: none;
-  color: white;
-  font-size: 13px;
-}
-.stay{
-  /* z-index: 100; */
-  /* position: fixed; */
-}
-.side{
- 
-}
-.wrapper{}
-.card-img-top{
-  width: 18;
-  height: 22rem;
+.card img{
+  height: 15rem ;
+  margin: auto;
 }
 .btn{
-  background-color:  tomato;
-  color: #fff;
-  border: none;
-  font-weight: light;
-}
-.pointer{
-  cursor: pointer;
-}
-
-.none{
-  display: none;
-}
-
-
-@media only screen and (min-width: 300px) {
-  input{
-    display: none;
-  }
-
-}
-@media only screen and (min-width: 600px) {
-  input{
-    display: block;
-
-}
-
-
-}
-
-/* hamburgerMenu.css */
-.hamburger-menu {
-  position: relative;
-}
-
-.menu-icon {
-  background: transparent;
-color: #fff;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50px; /* Adjust the position as needed */
-  right: 0;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  padding: 10px;
-  z-index: 1;
-}
-
-.menu-links a {
-  color: #333;
-  text-decoration: none;
-  padding: 5px;
-}
-
-/* Media query to hide menu-links on larger screens */
-@media (min-width: 768px) {
-  .menu-links {
-    display: none;
-
-  }
-  .menu-ul{
-    display: block;
-    }
-  
-}
-.menu-ul{
-  display:  flex;
-  width: 15rem;
-  justify-content: space-between; 
-  align-items: center;
-  margin: 0;
-}
-.menu-ul li{
-  text-decoration: none;
-
-
-}
-a{
-  text-decoration: none;
-  color: inherit;
-}
-.login-btn{
-  padding: .5rem 1rem;
-  border: 1px solid  rgb(130, 71, 71);
-  margin-left: 1rem;
+  background-color: brown;
+  color: white;
+  padding: .5rem;
   border-radius: 5px;
-  font-size: 12px;
+  margin-right: 5px;
 }
-.login-btn:hover{
-  background-color: #a09e9e3d;
-  cursor: pointer;
-}
-.cartImage{
-  width: 30rem;
+
+@media screen {
+  
 }

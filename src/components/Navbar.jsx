@@ -1,11 +1,8 @@
 import '../index.css'
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
-import Store from './Store'
-import Feed from './Feed'
-import Cart from './Cart'
-import Catergory from './Catergory'
+
 import Menu from './Menu';
+import Dropdown from './Dropdown';
 
 
 
@@ -15,23 +12,29 @@ import Menu from './Menu';
 function Navbar() {
 
   return (
-    <div>
+    <div className=' bg-zinc-800'>
 
-      <div className="row row-nav col-12 p-3 text-white bg-dark">
+      <div className="flex p-3 text-white">
 
-        <div className="logo d-flex col-3 ">
-          <div className="lgimg">DT</div>
-          <div className="lname">Digital Market</div>
+        <div className=" flex items-center w-1/4">
+          <div className=" p-2 border rounded-md px-3 bg-yellow-700  font-extrabold">DM</div>
+          <div className=" font-extrabold uppercase text-2xl ml-3">Digital Market</div>
         </div>
-        <div className="none d-flex col-6 justify-content-between  fw-light pointer pe-auto align-items-center">
+        <div className="flex w-1/2">
 
-          <Menu /> {/* Render the menu */}
-          <input type="text" placeholder='Search here.......' className='col-6' />
+          <div className="bg-white flex p-2 px-5 w-8/12 rounded-3xl">
+            <img src="./icons/search.svg" className='w-5 mr-3' alt="" />
+            <input type="text" placeholder='Search here.......' className='' /></div>
         </div>
-        <div className="login p-2 d-flex justify-content-between">
-          <div className='login-btn'>Login</div>
-          <div className='login-btn'>Signup</div>
+        <div className="flex right-2 absolute">
+          <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 mr-2'>Login</div>
+          <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 bg-yellow-800'>Sign up</div>
         </div>
+      </div>
+      <div className="flex justify-between mx-3 my-3 w-1/2">
+        <Dropdown />
+        <Menu /> {/* Render the menu */}
+
       </div>
     </div>
 
