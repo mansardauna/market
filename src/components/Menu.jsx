@@ -5,7 +5,7 @@ import '../index.css'
 
 const Menu = () => {
   return (
-    <ul className=' flex w-1/2 text-white justify-between mt-3' style={{ listStyle: 'none' }}>
+    <ul className=' flex w-full md:w-1/2 text-white justify-between mt-3' style={{ listStyle: 'none' }}>
       <li>
         <Link to="./catergory">Home</Link>
       </li>

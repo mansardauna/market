@@ -19,7 +19,7 @@ body{
   overflow-x: hidden;
 }
 .grid{
-  margin-top: 0rem;
+  
 }
 
 .grid-card{
@@ -50,13 +50,28 @@ body{
   margin: auto;
 }
 .btn{
-  background-color: brown;
-  color: white;
-  padding: .5rem;
-  border-radius: 5px;
+border: 1px solid tomato;  
+  padding: .5rem 1rem;
+  border-radius: 2rem;
+  text-align: center;
   margin-right: 5px;
 }
+.blue{
+  border: 1px solid 
+  rgb(54, 54, 172);
+  margin-top: .5rem;
+}
+.card{
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
 
-@media screen {
-  
+@media screen and (max-width: 480px) {
+.grid-card{
+  grid-template-columns: auto;
+  margin-left: 2rem;
+
+}  
 }

@@ -11,7 +11,7 @@ const DropdownMenu = () => {
   };
 
   return (
-    <div className='mb-2'>
+    <div className='mb-2 hidden md:block'>
 
       <select id="dropdown" value={selectedOption} onChange={handleOptionChange} className='drop bg-transparent text-white w-36 text-sm px-2 outline-none border-gray-300 border rounded-md cursor-pointer py-2'>
 

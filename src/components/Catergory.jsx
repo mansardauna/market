@@ -5,6 +5,7 @@ import Navbar from './Navbar';
 import '../index.css'
 
 
+
 const Catergory = () => {
   const [data, setData] = useState(Catergories)
   const filterResult = (catItems) => {
@@ -19,8 +20,8 @@ const Catergory = () => {
     <>
       <div className=''>
         <div className="flex">
-          <div className=" w-1/4 grid hidden md:block h-fit">
-            <div className="category m-auto font-semibold text-2xl uppercase text-amber-400 font-light">Products</div>
+          <div className=" w-1/4 sidebar grid hidden md:block h-fit">
+            <div className="category m-auto w-fit  text-2xl uppercase text-amber-400 font-light">Products</div>
 
             <div className="flex" onClick={() => filterResult('men')}>
               <img src='/icons/car.svg' className='w-5' />
@@ -61,7 +62,7 @@ const Catergory = () => {
 
 
           </div>
-          <div className=" container">
+          <div className=" container bg-slate-100" >
             <div className="grid-card">
               {data.map((values) => {
                 const { id, title, price, image } = values
@@ -70,12 +71,15 @@ const Catergory = () => {
                     <div className="col-sm-4 mt-2" key={id}>
                       <div className="card">
                         <img src={image} className="card-img-top" alt="..." />
-                        <div className="card-body">
-                          <h5 className="card-title">{title}</h5>
-                          <h5>{price}</h5>
-                          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" className="btn uppercase">Cart</a>
-                          <a href="#" className="btn uppercase">buy</a>
+                        <div className="card-body mt-2">
+                          <h5 className="card-title uppercase m-auto w-fit font-light text-4xl">{title}</h5>
+                          <h5 className='text-4xl float-right font-thin'>${price}</h5>
+                          <p className="card-text text-sm font-light
+                           mb-2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div className='grid'>
+                            <a href="#" className="btn uppercase">Cart</a>
+                            <a href="#" className="btn uppercase blue">buy</a>
+                          </div>
                         </div>
                       </div>
 
