@@ -30,6 +30,12 @@ body{
   column-gap: 4px;
   padding: 1rem;
 } */
+input{
+  border: none;
+}
+input:focus{
+  outline: none;
+}
 .side .flex{
   padding: .7rem;
   padding-left: 1.5rem;
@@ -67,4 +73,27 @@ border: 1px solid tomato;
   width: 20rem;
   padding: 1rem;
   border-radius: 10px;
+}
+.nav{
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.wrap{
+  position: absolute;
+  margin: 9rem auto;
+}
+.side{
+  position: sticky;
+  top: 150px;
+}
+.container{
+}
+.search-results{
+  background-color: #fff;
+  padding: 2rem;
+  height: 10rem;
+  overflow-y: auto;
 }

@@ -17,7 +17,7 @@ const Catergory = () => {
 
   return (
     <>
-      <div className=''>
+      <div className='wrap'>
         <div className="flex">
           <div className=" w-1/4 side hidden md:block h-fit">
             <div className="category m-auto w-fit  text-2xl uppercase text-amber-400 font-light">Products</div>
@@ -61,6 +61,7 @@ const Catergory = () => {
 
 
           </div>
+
           <div className=" container " >
             <div className="grid-card grid grid-cols-1 m-auto md:grid-cols-3 w-fit gap-10">
               {data.map((values) => {
