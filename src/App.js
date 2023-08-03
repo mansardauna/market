@@ -1,12 +1,14 @@
 // App.js
 import React from 'react';
-import Cart from './components/Cart';
-import Catergory from './components/Catergory'
-import Feed from './components/Feed';
+import Cart from './components/pages/Cart';
+import Catergory from './components/pages/Catergory'
 import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 
 import Layout from './components/layout';
-import Navbar from './components/Navbar';
+import Navbar from './components/Nav/Navbar';
+import Store from './components/pages/Store';
+import Ads from './components/pages/Ads';
+import Order from './components/pages/Order';
 
 
 
@@ -18,8 +20,10 @@ const App = () => {
 
         <Routes>
           <Route path="/catergory" element={<Catergory />} />
+          <Route path="/ads" element={<Ads />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/feed" element={<Feed />} />
+          <Route path="/order" element={<Order />} />
+          <Route path="/Store" element={<Store />} />
 
         </Routes>
 

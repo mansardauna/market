@@ -1,11 +1,12 @@
-import '../index.css'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 import Menu from './Menu';
 import Dropdown from './Dropdown';
 import HamburgerMenu from './Handburger';
 import Search from './Search';
-import catergories from './catergories';
+import catergories from '../catergories';
 
 
 
@@ -42,8 +43,8 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex right-2 absolute">
-          <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 mr-2'>Login</div>
-          <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 bg-yellow-800'>Sign up</div>
+          <Link to='./Cart'> <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 mr-2'>Cart</div></Link>
+          <div className='border border-yellow-800 p-2 rounded-md text-xs shadow-md shadow-gray-600 bg-yellow-800'>Account</div>
         </div>
       </div>
       <div className="flex justify-between mx-3 my-3 w-1/2">

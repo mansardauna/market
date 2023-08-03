@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../index.css'
 
 const DropdownMenu = () => {
   const options = ['Popular Today', 'Option 2', 'Option 3', 'Option 4'];

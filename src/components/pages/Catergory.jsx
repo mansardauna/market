@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import catergories from './catergories';
-import Catergories from './catergories';
-import '../index.css'
+import catergories from '../catergories';
+import Catergories from '../catergories';
+import Popup from '../Popup';
 
 
 
@@ -22,32 +22,38 @@ const Catergory = () => {
           <div className=" w-1/4 side hidden md:block h-fit">
             <div className="category m-auto w-fit  text-2xl uppercase text-amber-400 font-light">Products</div>
 
-            <div className="flex" onClick={() => filterResult('men')}>
+            <div className="flex" onClick={() => filterResult('fashion')}>
+              <img src='/icons/cloths.svg' className='w-5' alt="icon" />
+              <div className="label ml-2">Fashion</div>
+            </div>
+
+
+            <div className="flex" onClick={() => filterResult('car')}>
               <img src='/icons/car.svg' className='w-5' alt='car' />
               <div className="label ml-2">Automobile</div>
             </div>
 
-            <div className="flex" onClick={() => filterResult('women')}>
+            <div className="flex" onClick={() => filterResult('phone')}>
               <img src='/icons/phone.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Phones and Gadgets</div>
             </div>
 
-            <div className="flex" onClick={() => filterResult('white')}>
+            <div className="flex" onClick={() => filterResult('book')}>
               <img src='/icons/books.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Books</div>
             </div>
 
-            <div className="flex" onClick={() => filterResult('child')}>
+            <div className="flex" onClick={() => filterResult('electronic')}>
               <img src='/icons/electronic.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Electronics</div>
             </div>
 
-            <div className="flex" onClick={() => filterResult('white')}>
+            <div className="flex" onClick={() => filterResult('food')}>
               <img src='/icons/food.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Food Items</div>
             </div>
 
-            <div className="flex" onClick={() => filterResult('white')}>
+            <div className="flex" onClick={() => filterResult('music')}>
               <img src='/icons/music.svg' className='w-5' alt="icon" />
               <div className="label ml-2">Music</div>
             </div>
@@ -57,18 +63,31 @@ const Catergory = () => {
               <div className="label ml-2">All</div>
             </div>
 
+            <div className="flex" onClick={() => setData(catergories)}>
+              <img src='/icons/chat.svg' className='w-5' alt='icon' />
+              <div className="label ml-2">Forun</div>
+
+            </div>
+
+            <div className="flex" onClick={() => setData(catergories)}>
+              <img src='/icons/setting.svg' className='w-5' alt='icon' />
+              <div className="label ml-2">Settings</div>
+
+            </div>
+
+
 
 
 
           </div>
 
           <div className=" container " >
-            <div className="grid-card grid grid-cols-1 m-auto md:grid-cols-3 w-fit gap-10">
+            <div className="grid-card grid grid-cols-1 m-auto md:grid-cols-3 w-8/12 md:w-fit gap-10">
               {data.map((values) => {
                 const { id, title, price, image } = values
                 return (
                   <>
-                    <div className="col-sm-4 mt-2" key={id}>
+                    <div className="md:col-sm-4 mt-2" key={id}>
                       <div className="card">
                         <img src={image} className="card-img-top" alt="..." />
                         <div className="card-body mt-2">
@@ -79,6 +98,7 @@ const Catergory = () => {
                           <div className='grid'>
                             <a href="./home" className="btn uppercase">Cart</a>
                             <a href="./home" className="btn uppercase blue">buy</a>
+
                           </div>
                         </div>
                       </div>

@@ -11,9 +11,9 @@ const NavItems = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/Store" component={Store} />
+        <Route path="/feed" component={Store} />
         <Route path="/Cart" component={Cart} />
-        <Route path="/Feed" component={Feeds} />
+        <Route path="/store" component={Feeds} />
       </Switch>
     </Router>
   );

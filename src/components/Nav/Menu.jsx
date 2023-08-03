@@ -1,7 +1,6 @@
 // Menu.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../index.css'
 
 const Menu = () => {
   return (
@@ -13,10 +12,10 @@ const Menu = () => {
         <Link to="./store">Store</Link>
       </li>
       <li>
-        <Link to="./cart">Cart</Link>
+        <Link to="./order">Orders</Link>
       </li>
       <li>
-        <Link to="./feed">Feed</Link>
+        <Link to="./ads">Ads</Link>
       </li>
       {/* Add more menu items with their corresponding links */}
     </ul>
